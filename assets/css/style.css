@@ -69,6 +69,36 @@ navbar .logo {
     margin-bottom: 1.5rem;
 }
 
+/* media queries */
+/* make all service cards the same height for consistency  */
+/* medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    #services .card-body {
+        min-height: 195px;
+    }
+}
+
 /* grid visualisation CSS for testing */
 
 /* .container,
