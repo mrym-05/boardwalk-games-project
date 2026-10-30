@@ -133,6 +133,30 @@ navbar .logo {
     border: none;
 }
 
+/* game library 'reserve a game' section */
+.reserve-heading {
+    text-align: center;   
+}
+
+.reserve-para {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* game reservation form */
+/* .container{
+    padding-bottom: 30px;
+} */
+
+#game-res-btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
 /* footer / contact */
 #contact {
     background-color: var(--primary-color);

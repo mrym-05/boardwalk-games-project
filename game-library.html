@@ -113,7 +113,7 @@
         <section id="new-games" class="container section">
             <div class="row">
                 <div class="col-12 text-center">
-                    New Games
+                    <h2>New Games</h2>
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
@@ -129,7 +129,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-2.webp" alt="Mystic Woods board game box">
+                        <img class="card-img-top" src="assets/images/new-games-2.webp"
+                            alt="Mystic Woods board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Mystic Woods</h3>
                             <p class="card-text">Enter the enchanted forest of Mystic Woods. Combine spells, gather
@@ -141,7 +142,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-3.webp" alt="Captain's Gambit board game box">
+                        <img class="card-img-top" src="assets/images/new-games-3.webp"
+                            alt="Captain's Gambit board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Captain's Gambit</h3>
                             <p class="card-text">Engage in battles, form fleeting alliances, and navigate treacherous
@@ -153,7 +155,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-4.webp" alt="Critter Quest board game box">
+                        <img class="card-img-top" src="assets/images/new-games-4.webp"
+                            alt="Critter Quest board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Critter Quest</h3>
                             <p class="card-text">Solve simple puzzles, collect magical gems, and help friends along the
@@ -174,7 +177,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-1.webp" alt="Settlers of Catan board game">
+                        <img class="card-img-top" src="assets/images/fav-games-1.webp"
+                            alt="Settlers of Catan board game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Settlers of Catan</h3>
                             <p class="card-text">Picture yourself in the era of discoveries: after a long voyage of
@@ -198,7 +202,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-3.webp" alt="Exploding Kittens card game">
+                        <img class="card-img-top" src="assets/images/fav-games-3.webp"
+                            alt="Exploding Kittens card game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Exploding Kittens</h3>
                             <p class="card-text">Exploding Kittens is a kitty-powered version of Russian Roulette.
@@ -226,6 +231,60 @@
         </section>
     </main>
 
+    <!-- reservation form section -->
+    <section>
+        <h2 class="reserve-heading">Reserve a game</h2>
+        <p class="reserve-para">Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and
+            let the adventure
+            begin! Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.
+        </p>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="full-name" class="form-label">Full name</label>
+                        <input type="text" class="form-control" id="full-name" name="full-name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phone-number" class="form-label">Phone number</label>
+                        <input type="tel" class="form-control" id="phone-number" name="phone-number" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email-address" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email-address" name="email-address" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="event-type" class="form-label">Event type</label>
+                        <select id="event-type" name="event-type" class="form-select">
+                            <option value="" selected>Select game</option>
+                            <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                            <option value="mystic-woods">Mystic Woods</option>
+                            <option value="captains-gambit">Captain's Gambit</option>
+                            <option value="critter-quest">Critter Quest</option>
+                            <option value="setters-of-catan">Setters of Catan</option>
+                            <option value="monopoly">Monopoly</option>
+                            <option value="exploding-kittens">Exploding Kittens</option>
+                            <option value="cluedo">Cluedo</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="requested-date" class="form-label">Requested date</label>
+                        <input type="date" class="form-control" id="requested-date" name="requested-date">
+                    </div>
+                    <div id="game-res-btn" class="col-12">
+                        <button type="submit" class="btn custom-button-outline">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- footer/contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="contact" class="mt-auto">
@@ -247,14 +306,14 @@
                     </p>
                     <div class="social-links my-4">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our Instagram page (opens in a new tab)"><i
-                                    class="fa-brands fa-instagram"></i></a>
+                            aria-label="Visit our Instagram page (opens in a new tab)"><i
+                                class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our Facebook page (opens in a new tab)"><i
-                                    class="fa-brands fa-facebook"></i></a>
+                            aria-label="Visit our Facebook page (opens in a new tab)"><i
+                                class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/" target="_blank" rel="noopener"
-                                aria-label="Visit our Twitter page (opens in a new tab)"><i
-                                    class="fa-brands fa-square-twitter"></i></a>
+                            aria-label="Visit our Twitter page (opens in a new tab)"><i
+                                class="fa-brands fa-square-twitter"></i></a>
                     </div>
                 </div>
                 <!-- Opening times -->
