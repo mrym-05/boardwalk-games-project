@@ -106,6 +106,10 @@ navbar .logo {
     color: var(--secondary-color);
 }
 
+#contact .table-dark * {
+    background-color: transparent;
+}
+
 /* media queries */
 /* make all service cards the same height for consistency  */
 /* medium devices (tablets, 768px and up) */
