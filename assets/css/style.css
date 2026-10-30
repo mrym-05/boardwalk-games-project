@@ -57,7 +57,7 @@ h2 {
 }
 
 .custom-button-outline {
-    border: 2px solid var(--highlight-color);
+    border: 2.5px solid var(--highlight-color);
     padding: 7px 25px;
     color: var(--highlight-color);
 }
@@ -111,6 +111,18 @@ navbar .logo {
     padding: 1rem 0.5rem;
 }
 
+#student-discount-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--highlight-color);
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 4vh;
+    margin-bottom: 20px;
+}
+
 #events-btn {
     text-align: center;
 }
@@ -159,6 +171,17 @@ navbar .logo {
 /* media queries */
 /* make all service cards the same height for consistency  */
 /* medium devices (tablets, 768px and up) */
+@media screen and (max-width: 320px) {
+    #events-table th,
+    #events-table td {
+        padding: 0.5rem 0.25rem;
+    }
+    
+    #events-table {
+        font-size: 0.9rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     #services .card-body {
         min-height: 191px;
@@ -172,12 +195,22 @@ navbar .logo {
     .table-wrapper {
         padding: 0 25px;
     }
+
+    #student-discount-container {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
 }
 
 /* large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
     #services .card-body {
         min-height: auto;
+    }
+
+    .para-one {
+        padding-top: 15px;
     }
 }
 
