@@ -69,6 +69,12 @@ navbar .logo {
     margin-bottom: 1.5rem;
 }
 
+/* game library card */
+#new-games .card,
+#fav-games .card {
+    border: none;
+}
+
 /* media queries */
 /* make all service cards the same height for consistency  */
 /* medium devices (tablets, 768px and up) */
