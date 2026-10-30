@@ -91,8 +91,28 @@ navbar .logo {
     background-color: transparent;
 }
 
+/* events */
+#events {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+#events .display-3 {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
 #services .card {
     margin-bottom: 1.5rem;
+}
+
+#events-table th,
+#events-table td {
+    padding: 1rem 0.5rem;
+}
+
+#events-btn {
+    text-align: center;
 }
 
 /* game library card */
@@ -142,6 +162,15 @@ navbar .logo {
 @media screen and (min-width: 768px) {
     #services .card-body {
         min-height: 191px;
+    }
+
+    .events-text {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .table-wrapper {
+        padding: 0 25px;
     }
 }
 
