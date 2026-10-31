@@ -204,7 +204,8 @@
                     <h1 class="display-3">Join our events</h1>
                     <div class="row">
                         <div class="col-12 col-xl-6">
-                            <p class="events-text para-one">Whether you're delving into dungeons, reliving classic games,
+                            <p class="events-text para-one">Whether you're delving into dungeons, reliving classic
+                                games,
                                 or competing in high-stakes tournaments, there's something for every gamer.
                                 Reservations are recommended to ensure your spot at the table. Student
                                 discounts are available, so bring your student ID and enjoy more gaming for less.</p>
@@ -337,6 +338,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+
+    <!-- closes navbar after clicking link (on collapsed navbar) -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 
 </body>
 
