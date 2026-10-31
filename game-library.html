@@ -238,53 +238,56 @@
             let the adventure
             begin! Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.
         </p>
+        <form action="success.html" method="get">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="row">
+                            <div class="mb-3 col-xl-4">
+                                <label for="full-name" class="form-label">Full name</label>
+                                <input type="text" class="form-control" id="full-name" name="full-name" required>
+                            </div>
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-8">
-                    <div class="row">
-                        <div class="mb-3 col-xl-4">
-                            <label for="full-name" class="form-label">Full name</label>
-                            <input type="text" class="form-control" id="full-name" name="full-name" required>
-                        </div>
+                            <div class="mb-3 col-xl-4">
+                                <label for="phone-number" class="form-label">Phone number</label>
+                                <input type="number" class="form-control" id="phone-number" name="phone-number"
+                                    required>
+                            </div>
 
-                        <div class="mb-3 col-xl-4">
-                            <label for="phone-number" class="form-label">Phone number</label>
-                            <input type="tel" class="form-control" id="phone-number" name="phone-number" required>
+                            <div class="mb-3 col-xl-4">
+                                <label for="email-address" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email-address" name="email-address"
+                                    required>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="mb-3 col-xl-8">
+                                <label for="event-type" class="form-label">Event type</label>
+                                <select id="event-type" name="event-type" class="form-select" required>
+                                    <option value="" selected>Select game</option>
+                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                    <option value="mystic-woods">Mystic Woods</option>
+                                    <option value="captains-gambit">Captain's Gambit</option>
+                                    <option value="critter-quest">Critter Quest</option>
+                                    <option value="setters-of-catan">Setters of Catan</option>
+                                    <option value="monopoly">Monopoly</option>
+                                    <option value="exploding-kittens">Exploding Kittens</option>
+                                    <option value="cluedo">Cluedo</option>
+                                </select>
+                            </div>
 
-                        <div class="mb-3 col-xl-4">
-                            <label for="email-address" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email-address" name="email-address" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="mb-3 col-xl-8">
-                            <label for="event-type" class="form-label">Event type</label>
-                            <select id="event-type" name="event-type" class="form-select">
-                                <option value="" selected>Select game</option>
-                                <option value="galaxy-pioneers">Galaxy Pioneers</option>
-                                <option value="mystic-woods">Mystic Woods</option>
-                                <option value="captains-gambit">Captain's Gambit</option>
-                                <option value="critter-quest">Critter Quest</option>
-                                <option value="setters-of-catan">Setters of Catan</option>
-                                <option value="monopoly">Monopoly</option>
-                                <option value="exploding-kittens">Exploding Kittens</option>
-                                <option value="cluedo">Cluedo</option>
-                            </select>
-                        </div>
-                    
-                        <div class="mb-3 col-xl-4">
-                            <label for="requested-date" class="form-label">Requested date</label>
-                            <input type="date" class="form-control" id="requested-date" name="requested-date">
-                        </div>
-                        <div id="game-res-btn" class="col-12">
-                            <button type="submit" class="btn custom-button-outline">Submit</button>
+                            <div class="mb-3 col-xl-4">
+                                <label for="requested-date" class="form-label">Requested date</label>
+                                <input type="date" class="form-control" id="requested-date" name="requested-date">
+                            </div>
+                            <div id="game-res-btn" class="col-12">
+                                <button type="submit" class="btn custom-button-outline">Submit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </section>
 
 
